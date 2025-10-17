@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ravinala-airports-parking"
+version = "0.1.0"
+description = ""
+authors = ["llermaly <gllermaly@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+moviepy = "^1.0.3"
+ultralytics = "^8.1.19"
+tensorflow = "^2.15.0.post1"
+certifi = "^2024.2.2"
+easyocr = "^1.7.1"
+supervision = "^0.18.0"
+numpy = "^1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
