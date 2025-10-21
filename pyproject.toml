@@ -1,9 +1,10 @@
 [tool.poetry]
-name = "ravinala-airports-parking"
+name = "proyecto-deteccion-patentes"
 version = "0.1.0"
 description = ""
-authors = ["llermaly <gllermaly@gmail.com>"]
+authors = ["llermaly and t0mydev"]
 readme = "README.md"
+packages = [{include = "proyecto-deteccion-patentes"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"

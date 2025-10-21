@@ -19,7 +19,7 @@ data = []
 #model = YOLO('models/yolov8n.pt')
 
 # Open the video file
-video_path = "videos/entree_4s.mp4"
+video_path = "videos/entree.mp4"
 cap = cv2.VideoCapture(video_path)
 reader = easyocr.Reader(['en'])
 
@@ -93,12 +93,6 @@ with open('output.csv', 'w', newline='') as csvfile:
 
                 # Crop the frame to only select the detected object
                 crop = frame[int(box[1]):int(box[3]), int(box[0]):int(box[2])]
-                # Preprocess the cropped image, commenting because results were not good.
-                #crop = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-                #crop = cv2.equalizeHist(crop)
-                #crop = cv2.GaussianBlur(crop, (5, 5), 0)
-                
-                #crop = cv2.adaptiveThreshold(crop, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
                 
                 
 
